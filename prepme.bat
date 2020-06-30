@@ -1,0 +1,1 @@
+C:\Windows\System32\Sysprep\sysprep.exe /oobe /generalize /unattend:C:\deploy.xml
