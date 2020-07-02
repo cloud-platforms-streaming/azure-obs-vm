@@ -50,7 +50,7 @@
             "value": "obs"
         },
         "osDiskType": {
-            "value": "Standard_LRS"
+            "value": "Premium_LRS"
         },
         "virtualMachineSize": {
             "value": "Standard_NV4as_v4"

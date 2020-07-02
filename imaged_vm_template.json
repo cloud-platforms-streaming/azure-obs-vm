@@ -156,7 +156,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20200630"
+                        "id": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20200702153014"
                     }
                 },
                 "networkProfile": {
