@@ -3,7 +3,7 @@ export RG=`uuidgen`
 export NAME=`date +"%m%d%y%H%M"`
 export LOCATION=westus2
 
-if [ -z "$1" ]
+if [ ! -z "$1" ]
 then
   export IMAGEREFERENCE="-p imageReference=$1"
 fi
