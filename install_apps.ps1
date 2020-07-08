@@ -5,11 +5,6 @@ Invoke-Expression((New-Object System.Net.WebClient).DownloadString('https://choc
 # setup webclient for download
 $wc = New-Object System.net.WebClient
 
-# download virtual audio cable
-$vacurl = "https://software.muzychenko.net/trials/vac462.exe"
-$vacoutput = "c:\vac462.exe"
-$wc.DownloadFile($vacurl, $vacoutput)
-
 # download the first run batch file and put it on the desktop
 $baturl = "https://cloudplatformsstreaming.blob.core.windows.net/provisioningassets/firstrun.bat"
 $batoutput = "C:\firstrun.bat"
