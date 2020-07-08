@@ -8,7 +8,8 @@ then
   export IMAGEREFERENCE="-p imageReference=$1"
 fi
 
-az group create --name ${RG} --location ${LOCATION} --verbose
-az deployment group create -g ${RG} -f imaged_vm_template.json -p parameters.json  -p adminPassword=${PASSWORD} $IMAGEREFERENCE -n ${NAME} --verbose
+az group create -o table --name ${RG} --location ${LOCATION}
 
-echo "RG is ${RG}"
+echo "--------"
+
+az deployment group create -o table -g ${RG} -f imaged_vm_template.json -p parameters.json  -p adminPassword=${PASSWORD} $IMAGEREFERENCE -n ${NAME}

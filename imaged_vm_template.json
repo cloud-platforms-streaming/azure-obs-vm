@@ -68,7 +68,7 @@
         },
         "imageReference": {
             "type": "string",
-            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20200706135001"
+            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20200708125456"
         }
     },
     "variables": {
@@ -208,6 +208,10 @@
         "adminUsername": {
             "type": "string",
             "value": "[parameters('adminUsername')]"
+        },
+        "VMIpAddress": {
+            "type": "string",
+            "value": "[parameters('publicIpAddressName')]"
         }
     }
 }
