@@ -24,3 +24,4 @@ $wc.DownloadFile($configurl, $configoutput)
 choco install -y obs-studio
 choco install -y zoom
 choco install -y git
+choco install -y bluejeansapp
