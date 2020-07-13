@@ -36,5 +36,10 @@ You're good to go.
 ## Running the Built VM
 You could also build the VM every time and go from there. You will want to
 install the audio driver manually (by double clicking `vac462full.exe` in the
-file explorer and following the prompts). Then run `c:\firstrun.bat` and you
-are good to go.
+file explorer and following the prompts). 
+
+You will also need to install the AMD GPU driver extension from the Azure
+portal. This is normally included as a part of the `image_vm.sh` deployment, but
+it is *not* included as part of the standard build (in order to save time).
+
+Then run `c:\firstrun.bat` and you are good to go.
