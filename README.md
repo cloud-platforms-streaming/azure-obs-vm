@@ -9,8 +9,10 @@ machine. You will need the `az` CLI installed.
 
 When the provisioning process is complete, you'll be able to find the VM in
 your Azure account in the stated Resource Group and then obtain its public IP
-address. RDP connect to the VM and be sure to set the sound settings in your
-RDP client (eg: Remmina) to `remote`. Also be sure to connect a local folder
+address.
+
+RDP connect to the VM and be sure to **set the sound settings in your
+RDP client** (eg: Remmina) to `remote`. Also be sure to connect a local folder
 to the remote system so that you can transfer the audio driver.
 
 Once connected, open a file explorer transfer the `vac462full.exe` from your
