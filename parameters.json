@@ -50,10 +50,10 @@
             "value": "obs"
         },
         "osDiskType": {
-            "value": "Premium_LRS"
+            "value": "StandardSSD_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_NV4as_v4"
+            "value": "Standard_NV6"
         },
         "adminUsername": {
             "value": "streamer"
