@@ -1,7 +1,7 @@
 #!/bin/bash
 export RG=`uuidgen`
 export NAME=`date +"%m%d%y%H%M"`
-export LOCATION=westus2
+export LOCATION=${2:-eastus}
 
 if [ ! -z "$1" ]
 then

@@ -204,6 +204,28 @@
             "dependsOn": [
                 "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachineName'))]"
             ]
+        },
+        {
+            "name": "microsoft.nvidia-gpu-driver-windows-20201020094531",
+            "apiVersion": "2015-01-01",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+                "mode": "incremental",
+                "templateLink": {
+                    "uri": "https://gallery.azure.com/artifact/20161101/microsoft.nvidia-gpu-driver-windows-arm.1.1.0/Artifacts/MainTemplate.json"
+                },
+                "parameters": {
+                    "vmName": {
+                        "value": "[parameters('virtualMachineName')]"
+                    },
+                    "location": {
+                        "value": "[parameters('location')]"
+                    }
+                }
+            },
+            "dependsOn": [
+                "Microsoft.CustomScriptExtension-20200623131249"
+            ]
         }
     ],
     "outputs": {
