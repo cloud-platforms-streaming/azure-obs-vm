@@ -1,11 +1,11 @@
 #!/bin/bash
 export RG=`uuidgen`
 export NAME=`date +"%m%d%y%H%M"`
-export LOCATION=${2:-eastus}
+export LOCATION=${1:-eastus}
 
-if [ ! -z "$1" ]
+if [ ! -z "$2" ]
 then
-  export IMAGEREFERENCE="-p imageReference=$1"
+  export IMAGEREFERENCE="-p imageReference=$2"
 fi
 
 az group create -o table --name ${RG} --location ${LOCATION}
