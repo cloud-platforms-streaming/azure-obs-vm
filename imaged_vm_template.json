@@ -68,7 +68,7 @@
         },
         "imageReference": {
             "type": "string",
-            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20200708125456"
+            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20201117104743"
         }
     },
     "variables": {
@@ -180,28 +180,6 @@
                     }
                 }
             }
-        },
-        {
-            "name": "microsoft.amd-gpu-driver-windows-20200623131227",
-            "apiVersion": "2015-01-01",
-            "type": "Microsoft.Resources/deployments",
-            "properties": {
-                "mode": "Incremental",
-                "templateLink": {
-                    "uri": "https://catalogartifact.azureedge.net/publicartifacts/microsoft.amd-gpu-driver-windows-arm-1.0.1/MainTemplate.json"
-                },
-                "parameters": {
-                    "vmName": {
-                        "value": "[parameters('virtualMachineName')]"
-                    },
-                    "location": {
-                        "value": "[parameters('location')]"
-                    }
-                }
-            },
-            "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachineName'))]"
-            ]
         }
     ],
     "outputs": {
