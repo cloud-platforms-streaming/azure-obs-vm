@@ -230,7 +230,7 @@
                         "value": "[parameters('location')]"
                     },
                     "fileUris": {
-                        "value": "https://cloudplatformsstreaming.blob.core.windows.net/provisioningassets/install_apps.ps1?sp=r&se=2021-03-10T23:33:59Z&sv=2020-02-10&sr=b&sig=QZXz7SEV%2F6cLs1GpcONX31MdoRRd3ijufhqQZhPERBI%3D"
+                        "value": "https://cloudplatformsstreaming.blob.core.windows.net/provisioningassets/install_apps.ps1"
                     }
                 }
             },
