@@ -68,7 +68,13 @@
         },
         "imageReference": {
             "type": "string",
-            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20201117104743"
+            "defaultValue": "/subscriptions/eed21298-ee41-4be3-bf1e-72f4fc3ec776/resourceGroups/obs/providers/Microsoft.Compute/images/obs-image-20210310144751"
+        },
+        "patchMode": {
+            "type": "string"
+        },
+        "enableHotpatching": {
+            "type": "bool"
         }
     },
     "variables": {

@@ -46,6 +46,9 @@
         "publicIpAddressSku": {
             "value": "Basic"
         },
+        "virtualMachineComputerName": {
+            "value": "obs"
+        },
         "virtualMachineRG": {
             "value": "obs"
         },
@@ -60,6 +63,12 @@
         },
         "adminPassword": {
             "value": "pleasechangeme"
+        },
+        "patchMode": {
+            "value": "Manual"
+        },
+        "enableHotpatching": {
+            "value": false
         }
     }
 }
