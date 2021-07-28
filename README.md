@@ -21,8 +21,14 @@ system to the Windows system's `C:\`.
 
 ## Imaging the VM
 
-To image the VM, run `C:\prepme.bat` which will run sysprep and
-then shut down the machine. After the machine shuts down, follow [these
+Before imaging the VM, you'll need to install vac462full.exe on the Windows machine. Contact a [Contributor](https://github.com/cloud-platforms-streaming/azure-obs-vm/graphs/contributors) to this repo for this file if you don't have it.
+
+Next, run this command as an administrator to prepare the VM image (this will shut down the VM):
+`C:\Windows\System32\Sysprep\sysprep.exe /oobe /generalize /unattend:C:\deploy.xml`
+
+**Note**: We have tried automating these steps, but it seems to be a bit flaky (see [prepme.bat](https://github.com/cloud-platforms-streaming/azure-obs-vm/blob/main/prepme.bat)). Please file a pull request is you think you have a fix.
+
+After the machine shuts down, follow [these
 instructions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource#create-a-managed-image-in-the-portal)
 for creating a managed image.
 
@@ -44,10 +50,6 @@ You're good to go.
 
 You could also build the VM every time and go from there. You will want to
 install the audio driver manually (by double clicking `vac462full.exe` in the
-file explorer and following the prompts). 
-
-You will also need to install the AMD GPU driver extension from the Azure
-portal. This is normally included as a part of the `image_vm.sh` deployment, but
-it is *not* included as part of the standard build (in order to save time).
+file explorer and following the prompts).
 
 Then run `c:\firstrun.bat` and you are good to go.
