@@ -56,7 +56,7 @@
             "value": "StandardSSD_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_NV6"
+            "value": "Standard NV12s_v3"
         },
         "adminUsername": {
             "value": "streamer"
