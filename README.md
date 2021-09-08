@@ -3,7 +3,7 @@
 This repo contains various assets used to provision a Windows-based VM in
 Azure to run OBS for live streaming. This originally used Azure's "Standard NV6" machine type. [Azure Virtual Machine NV-series & NV_Promo SKU are retiring on 31 August 2022](https://github.com/azure-deprecation/dashboard/issues/174).
 
-The VM is now using the "Standard NV12s_v3" machine type.
+The VM is now using the "Standard_NV12s_v3" machine type.
 
 ## Build VM
 
